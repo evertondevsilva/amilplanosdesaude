@@ -31,23 +31,58 @@
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <img
-          src="logo.png"
+          src="logo-amil.png"
           width="100"
           alt="Logo da amil"
           class="max-h-[100vh] object-contain"
         />
-        <a
+        <!-- <a
           href="https://wa.me/seunumero"
           target="_blank"
           class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
         >
           Fale com um especialista
-        </a>
+        </a> -->
+        
+        <!-- Botão Menu Sandwich -->
+        <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none">
+          <svg
+            class="w-6 h-6 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Menu normal (desktop) -->
+        <nav class="hidden md:flex gap-6 text-gray-700 font-medium">
+          <a href="#hero">Início</a>
+          <a href="#amil-bronze">Amil Bronze</a>
+          <a href="#amil-prata">Amil Prata</a>
+          <a href="#amil-ouro">Amil Ouro</a>
+          <a href="#amil-platinium">Amil Platinium</a>
+        </nav>
+      </div>
+      <!-- Menu Mobile -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
+        <a href="#hero" class="block py-2 border-b">Início</a>
+        <a href="#amil-bronze" class="block py-2 border-b">Amil Bronze</a>
+        <a href="#amil-prata" class="block py-2">Amil Prata</a>
+        <a href="#amil-ouro" class="block py-2">Amil Ouro</a>
+        <a href="#amil-platinium" class="block py-2">Amil Platinium</a>
       </div>
     </header>
     
     <!-- Hero Section -->
-    <section class="min-h-screen pt-28 md:pt-36jiu9gvyf7mi0">
+    <section id="hero" class="min-h-screen pt-28 md:pt-36jiu9gvyf7mi0">
       <div class="flex flex-col md:flex-row items-center max-w-7xl mx-auto px-4">
         <!-- Texto à esquerda -->
         <div class="md:w-1/2 text-center md:text-left space-y-6">
@@ -55,7 +90,7 @@
             Seu plano de saúde com até
             <span class="text-green-600">30% de desconto</span>
           </h1>
-          <p class="text-lg md:text-xl text-gray-700">
+          <p class="text-2xl md:text-xl text-gray-700">
             Fale com um corretor agora mesmo e descubra o plano ideal para você e sua família.
           </p>
           
@@ -64,7 +99,7 @@
         <!-- Formulário à direita -->
         <div class="md:w-1/2 flex items-center justify-center p-8">
           <form class="w-full max-w-md">
-            <h2 class="text-2xl font-bold mb-6">Solicite uma Cotação</h2>
+            <!-- <h2 class="text-2xl font-bold mb-6">Solicite uma Cotação</h2> -->
             <input type="text" placeholder="Nome" class="w-full mb-4 p-2 border rounded" />
             <input type="text" placeholder="Cidade" class="w-full mb-4 p-2 border rounded" />
             <input type="email" placeholder="Email" class="w-full mb-4 p-2 border rounded" />
@@ -115,7 +150,7 @@
         <h2 class="text-3xl font-bold text-white mb-6">Planos Amil Bronze</h2>
 
         <!-- Item 1 -->
-        <div class="border rounded mb-4 pb-4 bg-white">
+        <div id="amil-bronze" class="border rounded mb-4 pb-4 bg-white">
           <button
             class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left toggle-btn"
             data-target="bronze1"
@@ -125,7 +160,7 @@
           </button>
           <div id="bronze1" class="accordion-content open">
             <p>Plano básico com cobertura ambulatorial e hospitalar com obstetrícia.</p>
-            <a href="https://wa.me/seunumero" target="_blank" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
 
@@ -140,13 +175,13 @@
           </button>
           <div id="bronze2" class="accordion-content">
             <p>Plano regional com ampla rede na Grande São Paulo e valores acessíveis.</p>
-            <a href="https://wa.me/seunumero" target="_blank" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="min-h-screen gradient-silver px-4 py-12">
+    <section id="amil-prata" class="min-h-screen gradient-silver px-4 py-12">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-gray-600 mb-6">Planos Amil Prata</h2>
 
@@ -160,7 +195,7 @@
           </button>
           <div id="prata1" class="accordion-content open">
             <p>Mais cobertura e maior rede credenciada, ideal para quem busca equilíbrio entre custo e benefícios.</p>
-            <a href="https://wa.me/seunumero" target="_blank" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
 
@@ -174,13 +209,13 @@
           </button>
           <div id="prata2" class="accordion-content">
             <p>Versão ampliada do plano Prata, com hospitais e laboratórios de maior referência.</p>
-            <a href="https://wa.me/seunumero" target="_blank" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="min-h-screen gradient-blue px-4 py-12">
+    <section id="amil-ouro" class="min-h-screen gradient-blue px-4 py-12">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-white mb-6 ">Plano Amil Ouro</h2>
 
@@ -194,13 +229,13 @@
           </button>
           <div id="ouro1" class="accordion-content open">
             <p>Atendimento em hospitais de excelência e cobertura nacional.</p>
-            <a href="https://wa.me/seunumero" target="_blank" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="min-h-screen gradient-white px-4 py-12">
+    <section id="amil-platinium" class="min-h-screen gradient-white px-4 py-12">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-gray-600 mb-6">Plano Amil Platinum</h2>
 
@@ -214,25 +249,33 @@
           </button>
           <div id="plat1" class="accordion-content open">
             <p>Plano premium com cobertura internacional, rede exclusiva e atendimento diferenciado.</p>
-            <a href="https://wa.me/seunumero" target="_blank" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Rodapé -->
-    <footer class="bg-gray-900 text-white px-4 py-8 text-center">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Amil_2020_logo.svg" alt="Logo Amil" class="h-6 mx-auto mb-2" />
+    <footer class="bg-gray-900 text-white px-3 py-8 text-center">
+      <img src="logo-amil-2.png" alt="Logo Amil" class="h-6 mx-auto mb-2" />
       <p>Consultor autorizado Amil</p>
-      <p>Contato: (11) 99999-9999 | contato@seudominio.com.br</p>
-      <div class="mt-2">
+      <p>Contato: (11) 94017-4391 | contato@amilplanosdesaude.com.br</p>
+      <!-- <div class="mt-2">
         <a href="#" class="mx-2 hover:text-blue-400">Facebook</a>
         <a href="#" class="mx-2 hover:text-blue-400">Instagram</a>
-      </div>
+      </div> -->
     </footer>
 
     <!-- JS: Accordion toggle com transição -->
     <script>
+      // Lógica do menu mobile
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("mobile-menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
       document.querySelectorAll(".toggle-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
         const targetId = btn.dataset.target;
