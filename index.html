@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consultor de Planos de Saúde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .gradient-blue {
-        background: linear-gradient(to bottom right, #010831, #1d21f8);
+        background: linear-gradient(to bottom right, #5165d8, #1d21f8);
       } 
-      .gradient-write {
-        background: linear-gradient(to bottom right, #c0c0c0, #dcdcdc);
-      }
+      
       
       .accordion-content {
         max-height: 0;
         overflow: hidden;
-        padding: 0 1rem;
         transition: max-height 0.4s ease, padding 0.3s ease;
       }
 
@@ -143,39 +141,83 @@
         </div>
       </div>
     </section>
-    <div  class=""></div>
+
     <!-- Seções de planos -->
     <section id="amil-bronze" class="min-h-screen gradient-blue px-4 pb-12 pt-20">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-white mb-6">Planos Amil Bronze</h2>
-
+        <div class="mb-6 text-white">
+          <p class="mb-4">Planos com abrangência regional para o estado de SP no segmento PME com contratação.</p>
+          <p class="mb-2">
+            <i class="fa-solid fa-plane"></i>
+            Seguro e Assistência de Viagem Internacional</p>
+          <p class="mb-2">
+            <i class="fa-solid fa-stethoscope"></i>
+            Atendimento Pré-Hospitalar e Orientação Médica por Telefone</p>
+        </div>
         <!-- Item 1 -->
-        <div class="border rounded mb-4 pb-4 bg-white">
+        <div class="border rounded mb-4 pb-4 bg-white px-4">
           <button
-            class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left toggle-btn"
+            class="w-full flex justify-between items-center py-3 font-semibold text-left toggle-btn"
             data-target="bronze1"
             data-group="bronze"
           >
-            Amil Bronze SP <span class="text-xl toggle-icon">−</span>
+            Amil Bronze SP<span class="text-xl toggle-icon">−</span>
           </button>
+          
           <div id="bronze1" class="accordion-content open">
-            <p>Plano básico com cobertura ambulatorial e hospitalar com obstetrícia.</p>
-            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <p class="text-blue-600 font-semibold">Hospitais de destaque no plano:</p>
+            <p class="mt-1"><strong>São Paulo:</strong> Centro De Tratamento Bezerra De Menezes, Hospital Carlos Chagas, 
+            Hospital e Maternidade Ipiranga Arujá, Hospital Ipiranga-Mogi, Hospital Luz Vila Mariana, Hospital Metropolitano, 
+            Hospital Paulistano, Hospital Vitória, Ophthal Hospital Especializado, Unidade Avançada Carlos Chagas, 
+            Unidade Avançada Luz Butantã, Unidade Avançada Luz Santo Amaro.</p>
+            <p class="text-blue-600 font-semibold mt-4">Diferenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Urgência e Emergência Nacional*</li>
+              <li class="marker:text-blue-500">Amil Espaço Saúde</li>
+              <li class="marker:text-blue-500">Desconto em Farmácia</li>
+              <li class="marker:text-blue-500">Programa Primeiros Cuidados</li>
+              <li class="marker:text-blue-500">Telemedicina Amil</li>
+            </ul>
+            <p class="mt-2 text-gray-500">*  Embutido nos contratos PME</p>
+            <p class="text-blue-600 font-semibold mt-4">Abrangência Regional:</p>
+            <p class="mt-1"><strong>São Paulo:</strong> Aruja, Cabreuva, Caieiras, Campo Limpo Paulista, Cubatao, Diadema, 
+              Guaruja, Guarulhos, Itaquaquecetuba, Itupeva, Jundiai, Maua, Mogi das Cruzes, Praia Grande, Ribeirao Pires, 
+              Santo Andre, Santos, Sao Bernardo do Campo, Sao Caetano do Sul, Sao Paulo, Sao Vicente, Varzea Paulista, Vinhedo.</p>
+            <a href="#hero" class="inline-block mt-4 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
 
         <!-- Item 2 -->
-        <div class="border rounded mb-4 pb-4 bg-white">
+        <div class="border rounded mb-4 pb-4 bg-white px-4">
           <button
-            class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left toggle-btn"
+            class="w-full flex justify-between items-center py-3 font-semibold text-left toggle-btn"
             data-target="bronze2"
             data-group="bronze"
           >
             Amil Bronze SP Mais <span class="text-xl toggle-icon">+</span>
           </button>
           <div id="bronze2" class="accordion-content">
-            <p>Plano regional com ampla rede na Grande São Paulo e valores acessíveis.</p>
-            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <p class="text-blue-600 font-semibold">Hospitais de destaque no plano:</p>
+            <p class="mt-1"><strong>São Paulo:</strong> Hospital Nove De Julho Alphaville, Hospital Central São Caetano, Hospital Santa Clara, Instituto Do Coração De Jundiaí, 
+              Santa Casa De Louveira, Projeto Criança, Hospital Pro-Mater Santo Antônio, Hospital Madre Theodora Campinas, Casa de Saúde Campinas, Celso Pierro, Hospital Boldrini e 
+              Sta Casa de Valinhos.</p>
+            <p class="text-blue-600 font-semibold mt-4">Diferenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Urgência e Emergência Nacional*</li>
+              <li class="marker:text-blue-500">Amil Espaço Saúde</li>
+              <li class="marker:text-blue-500">Desconto em Farmácia</li>
+              <li class="marker:text-blue-500">Programa Primeiros Cuidados</li>
+              <li class="marker:text-blue-500">Telemedicina Amil</li>
+            </ul>
+            <p class="mt-2 text-gray-500">*  Embutido nos contratos PME</p>
+
+            <p class="text-blue-600 font-semibold mt-4">Abrangência Regional:</p>
+            <p class="mt-1"><strong>São Paulo:</strong> Arujá, Barueri, Bertioga, Cabreúva, Caieiras, Cajamar, Campinas, Campo Limpo Paulista, Carapicuíba, Cotia, Cubatão, Diadema, 
+              Embu Das Artes, Ferraz De Vasconcelos, Francisco Morato, Franco Da Rocha, Guararema, Guarujá, Guarulhos, Hortolândia, Itanhaém, Itapecerica Da Serra, Itapevi, Itaquaquecetuba, 
+              Itupeva, Jandira, Jarinu, Jundiaí, Louveira, Mairiporã, Mauá, Mogi Das Cruzes, Mongaguá, Osasco, Peruíbe, Poá, Praia Grande, Ribeirão Pires, Santa Isabel, Santana De Parnaíba, 
+              Santo André, Santos, São Bernardo Do Campo, São Caetano Do Sul, São Paulo, São Vicente, Sumaré, Suzano, Taboão Da Serra, Valinhos, Vargem Grande Paulista, Várzea Paulista e Vinhedo.</p>
+            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
@@ -184,32 +226,44 @@
     <section id="amil-prata" class="min-h-screen gradient-silver px-4 pb-12 pt-20">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-gray-600 mb-6">Planos Amil Prata</h2>
-
-        <div class="border rounded mb-4 pb-4 bg-white">
-          <button
-            class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left toggle-btn"
-            data-target="prata1"
-            data-group="prata"
-          >
-            Amil Prata <span class="text-xl toggle-icon">−</span>
-          </button>
-          <div id="prata1" class="accordion-content open">
-            <p>Mais cobertura e maior rede credenciada, ideal para quem busca equilíbrio entre custo e benefícios.</p>
-            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
-          </div>
+        <div class="mb-6 text-gray-600">
+          <p class="mb-4">Planos com abrangência nacional.</p>
+          <p class="mb-2">
+            <i class="fa-solid fa-plane"></i>
+            Seguro e Assistência de Viagem Internacional</p>
+          <p class="mb-2">
+            <i class="fa-solid fa-stethoscope"></i>
+            Atendimento Pré-Hospitalar e Orientação Médica por Telefone</p>
         </div>
 
-        <div class="border rounded mb-4 pb-4 bg-white">
+        <div class="border rounded px-4 pb-4 bg-white">
           <button
-            class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left toggle-btn"
-            data-target="prata2"
+            class="w-full flex justify-between items-center py-3 font-semibold text-left toggle-btn"
+            data-target="prata"
             data-group="prata"
           >
-            Amil Prata Mais <span class="text-xl toggle-icon">+</span>
+            Amil Prata <span class="text-xl toggle-icon">-</span>
           </button>
-          <div id="prata2" class="accordion-content">
-            <p>Versão ampliada do plano Prata, com hospitais e laboratórios de maior referência.</p>
-            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+          <div id="prata" class="accordion-content open">
+            <p class="text-blue-600 font-semibold">Hospitais de destaque no plano:</p>
+            <p class="mt-1">
+              <strong>São Paulo:</strong> 
+              Hospital Samaritano Paulista, Hospital Paulistano, Hospital Metropolitano, 
+              Hospital Vitória e Leforte – Morumbi.
+            </p>
+            <p class="text-blue-600 font-semibold mt-4">Coberturas Assistenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Transplantes (extra rol)</li>
+            </ul>
+
+            <p class="text-blue-600 font-semibold mt-4">Diferenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Amil Espaço Saúde</li>
+              <li class="marker:text-blue-500">Programa Primeiros Cuidados</li>
+              <li class="marker:text-blue-500">Telemedicina Amil</li>
+            </ul>
+
+            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
@@ -217,46 +271,134 @@
 
     <section id="amil-ouro" class="min-h-screen gradient-blue px-4 pb-12 pt-20">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-white mb-6 ">Plano Amil Ouro</h2>
-
-        <div class="border rounded mb-4 pb-4 bg-white">
+        <h2 class="text-3xl font-bold text-white mb-6">Planos Amil Ouro</h2>
+        <div class="mb-6 text-white">
+          <p class="mb-4">Planos com abrangência nacional.</p>
+          <p class="mb-2">
+            <i class="fa-solid fa-plane"></i>
+            Seguro e Assistência de Viagem Internacional</p>
+          <p class="mb-2">
+            <i class="fa-solid fa-stethoscope"></i>
+            Atendimento Pré-Hospitalar e Orientação Médica por Telefone</p>
+        </div>
+        <div class="border rounded mb-4 pb-4 bg-white px-4">
           <button
-            class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left toggle-btn"
+            class="w-full flex justify-between items-center py-3 font-semibold text-left toggle-btn"
             data-target="ouro1"
             data-group="ouro"
           >
-            Amil Ouro <span class="text-xl toggle-icon">−</span>
+            Amil Ouro<span class="text-xl toggle-icon">−</span>
           </button>
+          
           <div id="ouro1" class="accordion-content open">
-            <p>Atendimento em hospitais de excelência e cobertura nacional.</p>
-            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+            <p class="text-blue-600 font-semibold">Hospitais de destaque no plano:</p>
+            <p class="mt-1">
+              <strong>São Paulo:</strong>
+              Leforte Liberdade, AACD, BP, Hospital São Camilo Santana, Maternidade Santa Joana*, Hospital Santa Catarina*.
+            </p>
+            <p class="mt-2 text-gray-500">*apenas QP</p>
+            <p class="text-blue-600 font-semibold mt-4">Coberturas Assistenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Transplantes (extra rol)</li>
+            </ul>
+            <p class="text-blue-600 font-semibold mt-4">Diferenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Amil Espaço Saúde</li>
+              <li class="marker:text-blue-500">Desconto em Farmácia</li>
+              <li class="marker:text-blue-500">Programa Primeiros Cuidados</li>
+              <li class="marker:text-blue-500">Telemedicina Amil</li>
+              <li class="marker:text-blue-500">Reembolso em consultas médicas e honorários médicos clínicos e cirúrgicos</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="amil-platinium" class="min-h-screen gradient-white px-4 pb-12 pt-20">
+    
+   <section id="amil-platinium" class="min-h-screen gradient-blue px-4 pb-12 pt-20">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-gray-600 mb-6">Plano Amil Platinum</h2>
-
-        <div class="border rounded mb-4 pb-4 bg-white">
+        <h2 class="text-3xl font-bold text-white mb-6">Planos Amil Platinium</h2>
+        <div class="mb-6 text-white">
+          <p class="mb-4">Planos com abrangência nacional.</p>
+          <p class="mb-2">
+            <i class="fa-solid fa-plane"></i>
+            Seguro e Assistência de Viagem Internacional</p>
+          <p class="mb-2">
+            <i class="fa-solid fa-stethoscope"></i>
+            Atendimento Pré-Hospitalar e Orientação Médica por Telefone</p>
+        </div>
+        <!-- item 1 -->
+        <div class="border rounded mb-4 pb-4 bg-white px-4">
           <button
-            class="w-full flex justify-between items-center px-4 py-3 font-semibold text-left toggle-btn"
-            data-target="plat1"
-            data-group="platinum"
+            class="w-full flex justify-between items-center py-3 font-semibold text-left toggle-btn"
+            data-target="platinium1"
+            data-group="platinium"
           >
-            Amil Platinum <span class="text-xl toggle-icon">−</span>
+            Amil Platinium<span class="text-xl toggle-icon">−</span>
           </button>
-          <div id="plat1" class="accordion-content open">
-            <p>Plano premium com cobertura internacional, rede exclusiva e atendimento diferenciado.</p>
-            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+          
+          <div id="platinium1" class="accordion-content open">
+            <p class="text-blue-600 font-semibold">Hospitais de destaque no plano:</p>
+            <p class="mt-1">
+              <strong>São Paulo:</strong>
+              Hospital Oswaldo Cruz – Paulista, AC Camargo, Hospital Nove de Julho, HCOR – Paraíso, Hospital Sírio-Libanês Bela Vista e Hospital Sírio-Libanês Itaim.
+            </p>
+            <p class="mt-2 text-gray-500">*apenas QP</p>
+            <p class="text-blue-600 font-semibold mt-4">Coberturas Assistenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Transplantes (extra rol)</li>
+            </ul>
+            <p class="text-blue-600 font-semibold mt-4">Diferenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Amil Espaço Saúde</li>
+              <li class="marker:text-blue-500">Desconto em Farmácia</li>
+              <li class="marker:text-blue-500">Programa Primeiros Cuidados</li>
+              <li class="marker:text-blue-500">Telemedicina Amil</li>
+              <li class="marker:text-blue-500">Reembolso em consultas médicas e honorários médicos clínicos e cirúrgicos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- item 2 -->
+        <div class="border rounded mb-4 pb-4 bg-white px-4">
+          <button
+            class="w-full flex justify-between items-center py-3 font-semibold text-left toggle-btn"
+            data-target="platinium2"
+            data-group="platinium"
+          >
+            Amil Platinium<span class="text-xl toggle-icon">+</span>
+          </button>
+          
+          <div id="platinium2" class="accordion-content">
+            <p class="text-blue-600 font-semibold">Hospitais de destaque no plano:</p>
+            <p class="mt-1">
+              <strong>São Paulo:</strong>
+              Hospital Sírio-Libanês (DF)
+            </p>
+            <p class="mt-2 text-gray-500">*apenas QP</p>
+            <p class="text-blue-600 font-semibold mt-4">Coberturas Assistenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Transplantes (extra rol)</li>
+              <li class="marker:text-blue-500">Escleroterapia</li>
+              <li class="marker:text-blue-500">Cirurgia Refrativa sem limite de grau</li>
+            </ul>
+            <p class="text-blue-600 font-semibold mt-4">Diferenciais:</p>
+            <ul class="list-disc list-inside">
+              <li class="marker:text-blue-500">Amil Espaço Saúde</li>
+              <li class="marker:text-blue-500">Coleta Domiciliar</li>
+              <li class="marker:text-blue-500">Desconto em Farmácia</li>
+              <li class="marker:text-blue-500">Programa Primeiros Cuidados</li>
+              <li class="marker:text-blue-500">Telemedicina Amil</li>
+              <li class="marker:text-blue-500">Retaguarda do Sírio-Libanês (DF e SP)</li>
+              <li class="marker:text-blue-500">Retaguarda do Samaritano (SP e RJ)</li>
+              <li class="marker:text-blue-500">Reembolso em consultas médicas e honorários médicos clínicos e cirúrgicos</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Rodapé -->
-    <footer class="bg-gray-900 text-white px-3 py-8 text-center">
+    <footer class="bg-gray-700 text-white px-3 py-8 text-center">
       <img src="logo-amil-2.png" alt="Logo Amil" class="h-6 mx-auto mb-2" />
       <p>Consultor autorizado Amil</p>
       <p>Contato: (11) 94017-4391 | contato@amilplanosdesaude.com.br</p>
@@ -317,7 +459,6 @@ window.addEventListener("load", () => {
     el.style.maxHeight = el.scrollHeight + "px";
   });
 });
-
 
       // Definir maxHeight inicial para os abertos na carga da página
       window.addEventListener("load", () => {
