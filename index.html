@@ -8,9 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .gradient-blue {
-        background: linear-gradient(to bottom right, #5165d8, #1d21f8);
-      } 
-      
+        background: linear-gradient(to bottom right, #4d6eff, #0c00b3);
+      }
       
       .accordion-content {
         max-height: 0;
@@ -22,6 +21,10 @@
         padding-top: 0;
         padding-bottom: 0;
       }
+
+      .card-width{
+        width: 300px;
+      }
     </style>
   </head>
   <body class="bg-gray-100 text-gray-800 scroll-smooth">
@@ -29,20 +32,11 @@
     <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <img
-          src="logo-amil.png"
+          src="image/logo-amil.png"
           width="100"
           alt="Logo da amil"
           class="max-h-[100vh] object-contain"
         />
-        <!-- <a
-          href="https://wa.me/seunumero"
-          target="_blank"
-          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
-        >
-          Fale com um especialista
-        </a> -->
-        
-        <!-- Botão Menu Sandwich -->
         <button id="menu-toggle" class="block md:hidden text-gray-700 focus:outline-none">
           <svg
             class="w-6 h-6 text-gray-800"
@@ -96,17 +90,14 @@
           
         </div>
 
-        <!-- Formulário à direita -->
         <div class="md:w-1/2 flex items-center justify-center p-8">
-          <form class="w-full max-w-md">
-            <!-- <h2 class="text-2xl font-bold mb-6">Solicite uma Cotação</h2> -->
-            <input type="text" placeholder="Nome" class="w-full mb-4 p-2 border rounded" />
-            <input type="text" placeholder="Cidade" class="w-full mb-4 p-2 border rounded" />
-            <input type="email" placeholder="Email" class="w-full mb-4 p-2 border rounded" />
-            <input type="tel" placeholder="Telefone" class="w-full mb-4 p-2 border rounded" />
-            <input type="text" placeholder="Quantidade de vidas" class="w-full mb-4 p-2 border rounded" />
-            <input type="text" placeholder="Idades" class="w-full mb-4 p-2 border rounded" />
-            <!-- Possui CNPJ -->
+          <form id="whatsappForm" class="w-full max-w-md">
+            <input type="text" placeholder="Nome" name="nome" class="w-full mb-4 p-2 border rounded" required/>
+            <input type="text" placeholder="Cidade" name="cidade" class="w-full mb-4 p-2 border rounded" required/>
+            <input type="email" placeholder="Email" name="email" class="w-full mb-4 p-2 border rounded" required/>
+            <input type="tel" placeholder="Telefone" name="telefone" class="w-full mb-4 p-2 border rounded" required/>
+            <input type="text" placeholder="Quantidade de vidas" name="vidas" class="w-full mb-4 p-2 border rounded"/>
+            <input type="text" placeholder="Idades" name="idades" class="w-full mb-4 p-2 border rounded" />
             <div class="mb-4 text-gray-500">
               <label class="block mb-2 font-medium">Possui CNPJ?</label>
               <div class="flex gap-4">
@@ -120,8 +111,6 @@
                 </label>
               </div>
             </div>
-
-            <!-- Possui plano atualmente -->
             <div class="mb-4 text-gray-500">
               <label class="block mb-2 font-medium">Possui plano atualmente?</label>
               <div class="flex gap-4">
@@ -147,7 +136,13 @@
     <!-- Seções de planos -->
     <section id="amil-bronze" class="min-h-screen gradient-blue px-4 pb-12 pt-20">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-white mb-6">Planos Amil Bronze</h2>
+        <h2 class="text-3xl font-bold text-white mb-6 relative">Planos Amil Bronze</h2>
+        <img
+          src="image/cartao-bronze.png"
+          width="100"
+          alt="Logo da amil"
+          class="max-h-[100vh] object-contain card-width mb-4"
+        />
         <div class="mb-6 text-white">
           <p class="mb-4">Planos com abrangência regional para o estado de SP no segmento PME com contratação.</p>
           <p class="mb-2">
@@ -219,15 +214,22 @@
               Embu Das Artes, Ferraz De Vasconcelos, Francisco Morato, Franco Da Rocha, Guararema, Guarujá, Guarulhos, Hortolândia, Itanhaém, Itapecerica Da Serra, Itapevi, Itaquaquecetuba, 
               Itupeva, Jandira, Jarinu, Jundiaí, Louveira, Mairiporã, Mauá, Mogi Das Cruzes, Mongaguá, Osasco, Peruíbe, Poá, Praia Grande, Ribeirão Pires, Santa Isabel, Santana De Parnaíba, 
               Santo André, Santos, São Bernardo Do Campo, São Caetano Do Sul, São Paulo, São Vicente, Sumaré, Suzano, Taboão Da Serra, Valinhos, Vargem Grande Paulista, Várzea Paulista e Vinhedo.</p>
-            <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
+              <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
     </section>
 
+    
     <section id="amil-prata" class="min-h-screen gradient-silver px-4 pb-12 pt-20">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-gray-600 mb-6">Planos Amil Prata</h2>
+        <img
+          src="image/cartao-prata.png"
+          width="100"
+          alt="Logo da amil"
+          class="max-h-[100vh] object-contain card-width mb-4"
+        />
         <div class="mb-6 text-gray-600">
           <p class="mb-4">Planos com abrangência nacional.</p>
           <p class="mb-2">
@@ -264,7 +266,6 @@
               <li class="marker:text-blue-500">Programa Primeiros Cuidados</li>
               <li class="marker:text-blue-500">Telemedicina Amil</li>
             </ul>
-
             <a href="#hero" class="inline-block mt-2 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
@@ -274,6 +275,12 @@
     <section id="amil-ouro" class="min-h-screen gradient-blue px-4 pb-12 pt-20">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-white mb-6">Planos Amil Ouro</h2>
+        <img
+          src="image/cartao-ouro.png"
+          width="100"
+          alt="Logo da amil"
+          class="max-h-[100vh] object-contain card-width mb-4"
+        />
         <div class="mb-6 text-white">
           <p class="mb-4">Planos com abrangência nacional.</p>
           <p class="mb-2">
@@ -311,14 +318,21 @@
               <li class="marker:text-blue-500">Telemedicina Amil</li>
               <li class="marker:text-blue-500">Reembolso em consultas médicas e honorários médicos clínicos e cirúrgicos</li>
             </ul>
+            <a href="#hero" class="inline-block mt-4 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
     </section>
     
-   <section id="amil-platinium" class="min-h-screen gradient-white px-4 pb-12 pt-20">
+   <section id="amil-platinium" class="min-h-screen gradient-silver px-4 pb-12 pt-20">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-gray-600 mb-6">Planos Amil Platinium</h2>
+        <img
+          src="image/cartao-platinum.png"
+          width="100"
+          alt="Logo da amil"
+          class="max-h-[100vh] object-contain card-width mb-4"
+        />
         <div class="mb-6 text-gray-600">
           <p class="mb-4">Planos com abrangência nacional.</p>
           <p class="mb-2">
@@ -357,6 +371,7 @@
               <li class="marker:text-blue-500">Telemedicina Amil</li>
               <li class="marker:text-blue-500">Reembolso em consultas médicas e honorários médicos clínicos e cirúrgicos</li>
             </ul>
+            <a href="#hero" class="inline-block mt-4 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
 
@@ -394,6 +409,7 @@
               <li class="marker:text-blue-500">Retaguarda do Samaritano (SP e RJ)</li>
               <li class="marker:text-blue-500">Reembolso em consultas médicas e honorários médicos clínicos e cirúrgicos</li>
             </ul>
+            <a href="#hero" class="inline-block mt-4 bg-green-500 text-white px-4 py-2 mt-4 rounded hover:bg-green-600">Solicite Uma Cotação</a>
           </div>
         </div>
       </div>
@@ -401,7 +417,7 @@
 
     <!-- Rodapé -->
     <footer class="bg-gray-700 text-white px-3 py-8 text-center">
-      <img src="logo-amil-2.png" alt="Logo Amil" class="h-6 mx-auto mb-2" />
+      <img src="image/logo-amil-2.png" alt="Logo Amil" class="h-6 mx-auto mb-2" />
       <p>Consultor autorizado Amil</p>
       <p>Contato: (11) 94017-4391 | contato@amilplanosdesaude.com.br</p>
     </footer>
@@ -426,7 +442,7 @@
       if (!clickDentroMenu && !clickNoBotao) {
         menu.classList.add("hidden");
       }
-    });
+      });
       // Fim lógica do menu mobile
 
       document.querySelectorAll(".toggle-btn").forEach((btn) => {
@@ -461,15 +477,14 @@
           target.classList.remove("open");
           icon.textContent = "+";
         }
+        });
       });
-    });
 
-// Ajusta no carregamento da página os que começam abertos
-window.addEventListener("load", () => {
-  document.querySelectorAll(".accordion-content.open").forEach((el) => {
-    el.style.maxHeight = el.scrollHeight + "px";
-  });
-});
+      window.addEventListener("load", () => {
+        document.querySelectorAll(".accordion-content.open").forEach((el) => {
+          el.style.maxHeight = el.scrollHeight + "px";
+        });
+      });
 
       // Definir maxHeight inicial para os abertos na carga da página
       window.addEventListener("load", () => {
@@ -477,7 +492,20 @@ window.addEventListener("load", () => {
           el.style.maxHeight = el.scrollHeight + "px";
         });
       });
-    </script>
 
+      document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        const whatsappNumber = "+5511947487633";
+
+        let message = `Olá, gostaria de solicitar uma cotação:\n`;
+        formData.forEach((value, key) => {
+          message += `${key}: ${value}\n`;
+        });
+
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, "_blank");
+      });
+    </script>
   </body>
 </html>
